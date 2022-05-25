@@ -1,5 +1,5 @@
 # AddressablePools
-A generalized system to create object pools directly from Addressable AssetReferences. Includes a Zenject factory implementation as well.
+A generalized system to create object pools directly from Unity's Addressable AssetReferences. Includes a Zenject factory implementation as well.
 
 `AddressableAssetPool` is the primary pooling mechanism. It takes an `AssetReference`, initial size, factory implementaiton of your choice, and a transform parent. Make sure it is initialized before spawning objects. You can check initialization status via `AsyncInitializationHandle`, or `IsInitialized` property. Alternatively you can also assign a callback method to `OnInitialized`.
 
